@@ -1,0 +1,11 @@
+id = "aria"
+name = "Aria"
+description = "Aria language support for Zed"
+version = "0.0.1"
+schema_version = 1
+authors = ["Enrico Bolzonello <enribolzonello@gmail.com>"]
+repository = "https://github.com/enribolzonello/zed-aria"
+
+[grammars.aria]
+repository = "https://github.com/arialang/tree-sitter-aria"
+commit = "608c16dfe8adabd8fae442dfe836b6ffc12c724e"

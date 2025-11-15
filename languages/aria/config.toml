@@ -1,0 +1,23 @@
+name = "Aria"
+grammar = "aria"
+path_suffixes = ["aria"]
+line_comments = ["# "]
+autoclose_before = ";:.,=}])"
+tab_size = 2
+brackets = [
+    { start = "{", end = "}", close = true, newline = true },
+    { start = "[", end = "]", close = true, newline = true },
+    { start = "(", end = ")", close = true, newline = true },
+    { start = "\"", end = "\"", close = true, newline = false, not_in = [
+        "comment",
+        "string",
+    ] },
+    { start = "'", end = "'", close = true, newline = false, not_in = [
+        "comment",
+        "string",
+    ] },
+    { start = "`", end = "`", close = true, newline = false, not_in = [
+        "comment",
+        "string",
+    ] },
+]
